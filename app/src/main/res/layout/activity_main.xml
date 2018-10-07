@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/button_loadcloset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Load Closet"
+        android:onClick="load_closet" />
+
+
+    <Button
+        android:id="@+id/button_temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Temperature"
+        android:layout_below="@+id/button_loadcloset"
+         />
+
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_temperature"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_below="@+id/imgView"
+        />
+
+
+</RelativeLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>
